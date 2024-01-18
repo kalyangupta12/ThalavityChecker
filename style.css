@@ -1,5 +1,7 @@
 * {
   font-family: "Poppins";
+  margin: 0;
+  padding: 0
 }
 
 body,html {
@@ -43,7 +45,7 @@ body,html {
   gap: 2em;
   justify-content: center;
   align-items: center;
-  height: 550px;
+  height: 600px; /* Change height to 100vh *//* Add this to enable scrolling if content exceeds viewport */
 }
 
 .input-section {
@@ -64,9 +66,9 @@ body,html {
 
 .input-section input {
   border-radius: 10px;
-  border: 2px solid rgb(138, 51, 51);
+  border: none;
   width: 100%;
-  padding: 10px;
+  padding: 0 0 0 10px;
 }
 
 .check-button {
