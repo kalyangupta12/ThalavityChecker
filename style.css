@@ -2,28 +2,35 @@
   font-family: "Poppins";
 }
 
-body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  overflow-y: hidden;
+body,html {
+  height:100vh;
+  width:100vw;
+}
+
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #dde5f4;
+  /* background: url('./celebration.gif'); */
   height: 100vh;
-  margin: 0; /* Add this to remove default body margin */
+  width: 100vw;
+  /* opacity: 0; Adjust the opacity value as needed */
 }
-
+.main .bg-img{
+  height:100%;
+  width:100%;
+  z-index: -99;
+  position: absolute;
+  display: none;
+}
 .profile-image {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   margin-top: 80px;
-  margin-bottom: 0;
-  padding: 0;
+  /* margin-bottom: 0; */
+  /* padding: 0; */
 }
 
 .screen-1 {
@@ -36,7 +43,7 @@ body {
   gap: 2em;
   justify-content: center;
   align-items: center;
-  height: 600px; /* Change height to 100vh *//* Add this to enable scrolling if content exceeds viewport */
+  height: 550px;
 }
 
 .input-section {
@@ -57,12 +64,13 @@ body {
 
 .input-section input {
   border-radius: 10px;
-  border: none;
+  border: 2px solid rgb(138, 51, 51);
   width: 100%;
+  padding: 10px;
 }
 
 .check-button {
-  padding: 1em;
+  padding: 1em 2em;
   background: #3e4684;
   color: white;
   border: none;
@@ -85,4 +93,32 @@ body {
 
 .github-icon {
   margin-top: 1em;
+}
+.screen-2{
+  background: #f1f7fe;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 2em #e6e9f9;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+
+  /* height:40vh; */
+  /* width:20vw; */
+  padding: 1vh;
+  /* background-color: aqua; */
+  display: none;
+  border: 2px solid blanchedalmond;
+  border-radius: 20px;
+}
+.screen-2 h1{
+  color: aliceblue;
+}
+.screen-2 video{
+  height:100%;
+  width: 100%;
+  object-fit: cover;
 }
