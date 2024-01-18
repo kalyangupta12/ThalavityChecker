@@ -1,0 +1,88 @@
+* {
+  font-family: "Poppins";
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dde5f4;
+  height: 100vh;
+  margin: 0; /* Add this to remove default body margin */
+}
+
+.profile-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 80px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.screen-1 {
+  background: #f1f7fe;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 2em #e6e9f9;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  height: 600px; /* Change height to 100vh *//* Add this to enable scrolling if content exceeds viewport */
+}
+
+.input-section {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  width: 100%;
+}
+
+.input-container {
+  width: 100%;
+}
+
+.input-section input {
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+}
+
+.check-button {
+  padding: 1em;
+  background: #3e4684;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  font-size: 0.7em;
+  color: #5e5e5e;
+  gap: 14em;
+  padding-bottom: 2em; /* Adjusted padding-bottom value */
+}
+
+.footer span {
+  cursor: pointer;
+}
+
+.github-icon {
+  margin-top: 1em;
+}
