@@ -16,9 +16,9 @@
                 Thalavity Checker!
             </h1>
             <div class="input-section">
-                <label for="words">&nbsp;&nbsp;Likho Niche!</label>
+                <label for="words">Likho Niche!</label>
                 <div class="input-container">
-                    <input type="text" name="words" placeholder="Enter your name">
+                    <input type="text" id="inptext" placeholder="Enter your name">
                 </div>
             </div>
             <button class="check-button">Check</button>
@@ -31,10 +31,37 @@
             </div>
         </div>
         <div class="screen-2">
-            <video src="thala.mp4" autoplay loop></video>
+            <video src="thala.mp4" autoplay loop muted></video>
             <h1>Thala for a reason ! 🎉</h1>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        const thala7 = document.querySelector("#inptext");
+        const checkit = document.querySelector(".check-button");
+        
+        checkit.addEventListener("click", () => {
+            var screen1 = document.querySelector('.screen-1');
+            var playVideo = document.querySelector('.screen-2');
+            var bgImage = document.querySelector('.bg-img');
+            var videoElement = document.querySelector('video'); // Define video element
+
+            var inpval = thala7.value;
+            
+            if (inpval === '7' || inpval.length === 7) {
+                screen1.style.display = "none";
+                playVideo.style.display = "block";
+                bgImage.style.display = "block";
+                
+                if(videoElement) {
+                    videoElement.muted = false; // Unmute the video
+                    videoElement.play();
+                } else {
+                    alert("Video not found or cannot be played.");
+                }
+            } else {
+                alert("Sorry! You are not thala for a reason!");
+            }
+        });
+    </script>
 </body>
 </html>
