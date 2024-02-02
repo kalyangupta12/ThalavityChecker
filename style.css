@@ -45,7 +45,8 @@ body,html {
   gap: 2em;
   justify-content: center;
   align-items: center;
-  height: 600px; /* Change height to 100vh *//* Add this to enable scrolling if content exceeds viewport */
+  height: 400px; 
+  /* Change height to 100vh *//* Add this to enable scrolling if content exceeds viewport */
 }
 
 .input-section {
@@ -66,9 +67,10 @@ body,html {
 
 .input-section input {
   border-radius: 10px;
+  /* outline: 1px solid red; */
+  outline: none;
   border: none;
   width: 100%;
-  padding: 0 0 0 10px;
 }
 
 .check-button {
@@ -124,3 +126,4 @@ body,html {
   width: 100%;
   object-fit: cover;
 }
+
